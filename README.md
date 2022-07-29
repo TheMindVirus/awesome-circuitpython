@@ -7,7 +7,9 @@
 ### All MMIO registers should return back to usable defaults after a hard reset.
 
 RP2040 Datasheet: https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf \
-MicroPython Port: https://github.com/adafruit/circuitpython/blob/main/py/obj.h
+MicroPython Port: https://github.com/adafruit/circuitpython/blob/main/py/obj.h \
+Previous Docs(7): https://learn.adafruit.com/extending-circuitpython/inside-the-virtual-machine \
+Building Docs(7): https://learn.adafruit.com/building-circuitpython
 
 ![screenshot](https://github.com/themindvirus/awesome-circuitpython/blob/macropad-mmio/screenshot.png)
 ![customio_build](https://github.com/themindvirus/awesome-circuitpython/blob/macropad-mmio/customio_build.png)
