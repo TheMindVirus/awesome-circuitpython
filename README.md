@@ -15,7 +15,7 @@ Building Docs(7): https://learn.adafruit.com/building-circuitpython
 
 ### Migrating `shared-module` and `shared-bindings` Versions
 
-From CircuitPython 7->8, shared-bindings must register in micropython by using a macro: \
+From CircuitPython 7->8, `shared-bindings` must register in MicroPython by using a macro: \
 `MP_REGISTER_MODULE(MP_QSTR_customio, customio_module, CIRCUITPY_CUSTOMIO);` \
 where "customio" and "CUSTOMIO" are replaced by the new module name (case sensitive).
 
@@ -24,12 +24,12 @@ where "customio" and "CUSTOMIO" are replaced by the new module name (case sensit
 ### Building `customio`
 
 The `customio` module was formed out of a previously written CircuitPython 7 Learn Guide Test Module \
-combined with dotenv from the shared-module folder with the aim of reading the Temperature ADC Registers \
+combined with `dotenv` from the `shared-module` folder with the aim of reading the Temperature ADC Registers \
 and other Hardware Peripherals built-in to the Raspberry Pi RP2040 Chip.
 
 ![customio_test](https://github.com/themindvirus/awesome-circuitpython/blob/macropad-mmio/customio_test.png)
 
 ### Future Work
 
-The `customio` module could be reused to form the basis of other custom shared-module packages with the `io` extension, \
+The `customio` module could be reused to form the basis of other custom `shared-module` packages with the `io` extension, \
 such as `mmioio` for chiplet-specific low-level register/peripheral access and `thermio` for Infrared Display and Positioning.
